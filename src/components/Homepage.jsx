@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom'
 // import { use } from 'bcrypt/promises'
 import SelectOption from './selectInput/SelectOption'
 import GalleryItem from './galleryItems/GalleryItem';
+import Slider from './propertySlider/Slider';
 function Homepage() {
   // const [products , setProducts] = useState([])
   // const navigate= useNavigate()
@@ -35,8 +36,8 @@ function Homepage() {
   // }
   const [activeItem, setActiveItem] = useState(0);
   const nav_tabs = [
-    {name:'Stays', id:0},
-    {name:'Trip', id:1},
+    {name:'Offers', id:0},
+    {name:'Types', id:1},
     {name:'About', id:2},
     {name:'Contact', id:3}
 
@@ -112,6 +113,8 @@ function Homepage() {
         </div>
       </div>
 
+      
+
       <div className="destinations-container">
           <h1 className='secondary-color'>Trending offers</h1>
           
@@ -124,9 +127,21 @@ function Homepage() {
 
           </div>
       </div>
-
+      <div className='about-us'>
+          <div className='about-inner'>
+          <div className="about-brief">
+            <h3 className='abouth3'>Find your property <br/> today</h3>
+            <Link to=''>Discover properties</Link>
+          </div>
+          <div className="about-text">
+          <h3 className='abouth3'>About us</h3>
+              <p>  Thinking of renting or buying a home? You've come to the right place. EstateSelect agents are the right people to help you make the move. If you have any questions about the processes of buying/selling or renting a home or if you need assistance in any way, we can help.</p>
+          </div>
+          </div>
+      </div>
       <div className='property-types'>
           <h1>Browse by property type</h1>
+          <Slider/>
       </div>
 
     </div>
