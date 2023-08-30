@@ -40,7 +40,7 @@ function Register() {
     <div className='login-container secondary-color'>
       <div className='div'>
     <h1>Sign Up</h1>
-    <p>Become our user, it costs absolutely nothing.</p>
+    <small>Become our user, it costs absolutely nothing.</small>
     <p><br/>Create an account</p>
 
     <form className='login-register-form' onSubmit={onSubmit}>
