@@ -1,17 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import {motion} from 'framer-motion';
 
-const Slider = () => {
+
+const Slider = ({item,message}) => {
     const carouselRef = useRef()
     const [width,setWidth] = useState(0);
-    const totalSlides = [
-        {text: 'Houses', number:'21,147',class:'house'},
-        {text: 'Flats', number:'113,243',class:'flat'},
-        {text: 'Cottages', number:'5,178',class:'cottage'},
-        {text: 'Apartments', number:'67,934',class:'apartment'}
+    
 
 
-    ];
     useEffect(() => {
         setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth)
     },[])
@@ -26,15 +22,34 @@ const Slider = () => {
         dragConstraints={{right: 0,left: -width}}
         className='inner-slider'
         >
-
-        {totalSlides.map((item, index) => (
+        {item && item.length > 0 ? 
+        item.map((item,index) => (
           <motion.div key={index}>
-            <div className={`card ${item.class}`}></div>
-            <h3>{item.text}</h3>
-            <small>{item.number} <span className='span'>{item.text}</span></small>
+            {item.type === 'totalSlides' && (
+               <>
+               <div className={`card ${item.class}`}></div>
+               <h3>{item.text}</h3>
+               <small>{item.number} <span className='span'>{item.text}</span></small>
+               </>
+            )}
+
+            {item.type === 'sale' && (
+               <>
+                
+               </>
+            )}
+             
+          
+          
+           
+          
+          
           </motion.div>
-        ))}
-        </motion.div>
+     )): (<>{message}</>)}
+        
+         
+     </motion.div>
+        
       </motion.div>
   </div>
         

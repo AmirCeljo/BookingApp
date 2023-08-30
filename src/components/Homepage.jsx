@@ -71,7 +71,15 @@ function Homepage() {
     {text:'item5',city:'Trebinje'},
     
   ]
-  
+  const totalSlides = [
+    {type:'totalSlides',text: 'Houses', number:'21,147',class:'house'},
+    {type:'totalSlides',text: 'Flats', number:'113,243',class:'flat'},
+    {type:'totalSlides',text: 'Cottages', number:'5,178',class:'cottage'},
+    {type:'totalSlides',text: 'Apartments', number:'67,934',class:'apartment'}
+];  
+  const sale = []
+  const recommended = [] 
+  const rent = []
 
   return (
     <div className='container'>
@@ -141,9 +149,20 @@ function Homepage() {
       </div>
       <div className='property-types'>
           <h1>Browse by property type</h1>
-          <Slider/>
+          <Slider item={totalSlides} message={'Nothing to show'}/>
       </div>
-
+      <div className='for-sale'>
+          <h1>For sale</h1>
+          <Slider item={sale} message={'Problem with server'}/>
+      </div>
+      <div className='recommended'>
+          <h1>Recommended</h1>
+          <Slider item={recommended} message={'Nothing recommended'}/>
+      </div>
+      <div className='for-rent'>
+          <h1>For rent</h1>
+          <Slider item={rent} message={'Nothing for rent'}/>
+      </div>
     </div>
   )
 }

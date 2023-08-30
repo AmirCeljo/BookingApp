@@ -31,7 +31,7 @@ function Login() {
     }
 
     if(!user){
-      const result = await axios.post('https://agencija-za-nekretnine-react.herokuapp.com/login', loginUser)
+      const result = await axios.post('http://localhost:3001/login', loginUser)
       if(result.data.role === 'admin'){
         toast('Uspješno ste logovani kao admin')
         navigate('/admin')

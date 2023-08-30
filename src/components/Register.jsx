@@ -5,7 +5,7 @@ import {FaSignInAlt} from 'react-icons/fa'
 import { toast } from 'react-toastify';
 import {useNavigate} from 'react-router-dom'
 function Register() {
-  const role = 'user'
+  // const role = 'user'
   const navigate = useNavigate()
   const [ registerUser, setRegisterUser] = useState({
     username: '',
@@ -27,7 +27,7 @@ function Register() {
     if(!username || !email || !password) {
       toast.error('Molimo popunite sva polja')
     }
-    const result = await axios.post('https://agencija-za-nekretnine-react.herokuapp.com/register', registerUser)
+    await axios.post('https://localhost:3000/register', registerUser)
     
       toast('Uspješno ste se registrovali')
       navigate('/login')

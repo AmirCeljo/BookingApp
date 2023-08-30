@@ -276,7 +276,7 @@ button{
 .about-inner .about-text h3{
   margin-bottom: 20px;
 }
-.destinations-container,.property-types {
+.destinations-container,.property-types, .for-sale,.recommended,.for-rent {
   padding:5% 0px;
   width:72%;
   margin: auto;
@@ -285,7 +285,7 @@ button{
 .destinations-container div img{
   width: 100%;height:150px;
 }
-.destinations-container h1, .property-types h1{
+.destinations-container h1, .property-types h1,.for-sale h1,.recommended h1,.for-rent h1{
   /* text-align: center; */
   color:rgb(28, 28, 28);
   margin-bottom: 10px;
