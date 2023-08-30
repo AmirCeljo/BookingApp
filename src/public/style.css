@@ -198,13 +198,13 @@
   /* align-items: center; */
 }
 .form .one{
-  width: 100%;
+  width: 60%;
 }
 .form .two{
-  width: 100%;
+  width: 25%;
 }
 .form .three{
-  width:100%;
+  width:15%;
 }
 input,select,button{
   padding:20px 10px;
@@ -231,7 +231,7 @@ button{
   padding:10px;
   margin:auto;
   border-radius: 10px;
-  /* background: url('../../../frontend/public/about.png') no-repeat center center/cover; */
+  /* background: url('') no-repeat center center/cover; */
   height: 270px;
   display: flex;
   justify-content: center;
