@@ -127,7 +127,7 @@ function Homepage() {
 
           </div>
       </div>
-      {/* <div className='about-us'>
+      <div className='about-us'>
           <div className='about-inner'>
           <div className="about-brief">
             <h3 className='abouth3'>Find your property <br/> today</h3>
@@ -138,7 +138,7 @@ function Homepage() {
               <p>  Thinking of renting or buying a home? You've come to the right place. EstateSelect agents are the right people to help you make the move. If you have any questions about the processes of buying/selling or renting a home or if you need assistance in any way, we can help.</p>
           </div>
           </div>
-      </div> */}
+      </div>
       <div className='property-types'>
           <h1>Browse by property type</h1>
           <Slider/>

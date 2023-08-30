@@ -231,7 +231,7 @@ button{
   padding:10px;
   margin:auto;
   border-radius: 10px;
-  /* background: url('') no-repeat center center/cover; */
+  background: url('../public/about.png') no-repeat center center/cover;
   height: 270px;
   display: flex;
   justify-content: center;
@@ -327,19 +327,19 @@ button{
   color: white;
 }
 .item1{
-  background: url('../../../frontend/public/sarajevo.jpg') no-repeat center center/cover;
+  background: url('../public/sarajevo.jpg') no-repeat center center/cover;
 
 }
 .item2{
-  background: url('../../../frontend/public/mostar.jpg') no-repeat center center/cover;
+  background: url('../public/mostar.jpg') no-repeat center center/cover;
 
 }
 .item3{
-  background: url('../../../frontend/public/neum.jpg') no-repeat center center/cover;
+  background: url('../public/neum.jpg') no-repeat center center/cover;
 
 }
 .item4{
-  background: url('../../../frontend/public/jajce.jpg') no-repeat center center/cover;
+  background: url('../public/jajce.jpg') no-repeat center center/cover;
 
 }
 .item5{
@@ -374,18 +374,18 @@ button{
 }
 
 .inner-slider .house{
-  background: url('../../../frontend/public/properties/houses.jpg') no-repeat center center/cover;
+  background: url('../public/properties/houses.jpg') no-repeat center center/cover;
 }
 .inner-slider .flat{
-  background: url('../../../frontend/public/properties/flats.jpg') no-repeat center center/cover;
+  background: url('../public/properties/flats.jpg') no-repeat center center/cover;
   
 }
 .inner-slider .cottage{
-  background: url('../../../frontend/public/properties/cabin.jpg') no-repeat center center/cover;
+  background: url('../public/properties/cabin.jpg') no-repeat center center/cover;
   
 }
 .inner-slider .apartment{
-  background: url('../../../frontend/public/properties/apartments.jpg') no-repeat center center/cover;
+  background: url('../public/properties/apartments.jpg') no-repeat center center/cover;
   
 }
 
