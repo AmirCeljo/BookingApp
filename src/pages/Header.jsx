@@ -15,16 +15,13 @@ function Header() {
   return (
     <div className='header'>
       <div className="header-ul">
-        <Link to='/'>Agencija.ba</Link>
+        <Link to='/'>EstateSelect</Link>
     <ul>
-      {/* <li><Link to='/login'><FaSignInAlt/> Prijavi se </Link></li>
-      <li><Link to='/register'><FaUser /> Registruj se </Link></li> */}
-
       {user ? (
           
             <>
             <li><Link to='/cart'><FaShoppingCart/></Link></li>
-            {user.role == 'admin' ? (
+            {user.role === 'admin' ? (
             <>
             <li><span>Admin</span></li>
           <li><Link to='/admin'>{user && user.name}<FaUser/></Link></li>

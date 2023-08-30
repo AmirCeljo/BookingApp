@@ -1,22 +1,36 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 function Footer() {
+  const footernav = 
+  [
+    {link:'', text: 'Offers'},
+    {link:'', text: 'Blog'},
+    {link:'', text: 'About'},
+    {link:'', text: 'Contact'},
+    {link:'', text: 'Login'},
+    {link:'', text: 'Register'},
+]
+
+const socialmedia = [
+  {link:'Facebook'},
+  {link:'Twitter'},
+  {link:'Instagram'},
+  {link:'Linkedin'}
+]
   return (
     <div className='footer'>
       <ul>
-        <li><a href="">Ponuda</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">O nama</a></li>
-        <li><a href="">Kontakt</a></li>
-        <li><a href="">Prijavi se</a></li>
-        <li><a href="">Registruj se</a></li>
+        {footernav.map(item=>(
+          <li><Link to={item.link}>{item.text}</Link></li>
+        ))}
       </ul>
       <ul>
-        <li><a href=""><FaFacebook/></a></li>
-        <li><a href=""><FaTwitter/></a></li>
-        <li><a href=""><FaInstagram/></a></li>
-        <li><a href=""><FaLinkedin/></a></li>
+        {socialmedia.map((item,index) => (
+           <li><Link to=''>{index === 0 ? <FaFacebook/> : index === 1 ? <FaTwitter/> : index === 2 ? <FaInstagram/> : index === 3 ? <FaLinkedin/> : ''}</Link></li>
+        ))}
+        
       </ul>
       <p>
         Copyright 2021 &copy; 2022  
