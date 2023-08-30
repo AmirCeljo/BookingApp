@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import {FaSignInAlt} from 'react-icons/fa'
 import {toast} from 'react-toastify'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate,Link} from 'react-router-dom'
 
 
 import axios from 'axios'
@@ -54,8 +54,9 @@ function Login() {
 
   return (
     <div className='login-container secondary-color'>
-      <h1 ><FaSignInAlt/>Prijavi se</h1>
-      <small>Prijavi se i rezerviši nekretninu danas</small>
+      <div className='div'>
+      <h1>Sign In</h1>
+      <small>Doesn't have an account yet ?     <Link to='/register'>Sign Up</Link></small>
 
       <form className='login-register-form' onSubmit={onSubmit}>
         <div className="form-group">
@@ -69,11 +70,15 @@ function Login() {
                   onChange={onChange}
                   placeholder="Unesite Password"/>
         </div>
+        <div className="checkbox">
+          <input type="checkbox" />
+          <label htmlFor=""> <small> Remember me</small></label>
+        </div>
         
-        
-          <button type='submit' className='btn-block'>Prijavi se</button>
+          <button type='submit' className='btn-block'>Sign in</button>
         
       </form>
+      </div>
     </div>
   )
 }

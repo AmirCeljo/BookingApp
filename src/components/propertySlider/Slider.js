@@ -34,16 +34,17 @@ const Slider = ({item,message}) => {
             )}
 
             {item.type === 'sale' && (
-               <>
-                
-               </>
-            )}
-             
-          
-          
-           
-          
-          
+              <div className='for-sale-card'>
+                <img src={item.imageUrl} alt="" />
+                <h5>{item.title}</h5>
+                {/* <small>{item.description}</small><br/> */}
+                <small>{item.address}</small>
+                <p>{item.price}</p>
+              </div>
+              )}
+
+            {item.type === 'recommended' && (<></>)}
+            {item.type === 'rent' && (<></>)}
           </motion.div>
      )): (<>{message}</>)}
         

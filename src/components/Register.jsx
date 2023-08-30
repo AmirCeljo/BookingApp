@@ -38,31 +38,39 @@ function Register() {
 
   return (
     <div className='login-container secondary-color'>
-    <h1 ><FaSignInAlt/>Registruj se</h1>
-    <small>Molimo da kreirate novi korisnički račun</small>
+      <div className='div'>
+    <h1>Sign Up</h1>
+    <p>Become our user, it costs absolutely nothing.</p>
+    <p><br/>Create an account</p>
 
     <form className='login-register-form' onSubmit={onSubmit}>
       <div className="form-group">
         <input type="text" className='form-control' name="username" value={username}
         onChange={onChange}
-        placeholder="Unesite Username"
+        placeholder="Enter your username"
         />
       </div>
       <div className="form-group">
         <input type="email" className='form-control' name="email" value={email}
         onChange={onChange}
-        placeholder="Unesite Email"/>
+        placeholder="Enter e-mail"/>
       </div>
       <div className="form-group">
                 <input type="password" className='form-control'name="password" value={password}
                 onChange={onChange}
-                placeholder="Unesite Password"/>
+                placeholder="Enter password"/>
+      </div>
+      <div className="checkbox">
+        
+                <input type="checkbox" className=''name="checkbox"/>
+                <label htmlFor=""> <small>I agree with privacy and policy</small></label>
       </div>
       
       
-        <button type='submit' className='btn-block'>Prijavi se</button>
+        <button type='submit' className='btn-block'>Sign Up</button>
       
     </form>
+    </div>
   </div>
   )
 }

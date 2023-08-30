@@ -10,7 +10,7 @@
 }
 
 .login-register-form{
-  width:30%;
+  width:100%;
   margin:auto;
   margin-top:5%;
 }
@@ -28,7 +28,7 @@
   width:100%;
   height: 40px;
   
-  border-radius: 0px;
+  border-radius: 5px;
   border:none;
   margin-bottom :5px;
   background-color: rgb(226, 226, 226);
@@ -51,11 +51,13 @@
   margin:5px;
 }
 .btn-block{
-  background: linear-gradient(to right, rgb(80, 86, 246),rgb(172, 83, 172));
+  background: rgb(18, 59, 207);
   color:white;
   border:none;
-  width:100%;
+  /* width:100%; */
   padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer ;
 }
 .btn-secondary{
   padding: 10px 20px;
@@ -172,13 +174,14 @@
   
 }
 .active{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50px;
+  border:2px solid white;
 }
 
 .landing-container-content form{
   background-color: gold;
-  transform: translate(0%, 120%);
+  transform: translate(0%, 140%);
   border-radius: 10px;
 } 
 .deals{
@@ -206,18 +209,18 @@
 .form .three{
   width:15%;
 }
-input,select,button{
+.form input,.form select,.form button{
   padding:20px 10px;
   border-radius: 10px;
   border:none;
 }
-input{
+.form input{
   width:100%;
 }
-select{
+.form select{
   width:100%;
 }
-button{
+.form button{
   width:100%;
   background-color: rgb(18, 59, 207);
   color: white;
@@ -366,6 +369,25 @@ button{
   border-radius: 8px;
   font-size: 18px;
 }
+.for-sale-card{
+  width: 300px;
+  background-color: #f5f5f5;
+}
+.for-sale-card img{
+  width:100%;
+  height: 50%;
+  border-radius: 8px;
+}
+
+.for-sale-card h5{
+  margin:3% 0%;
+}
+.for-sale-card small{
+  display: block;
+  margin:2% 0%;
+  color: cornflowerblue;
+}
+
 .inner-slider h3{
   margin-top:2%;
 }
@@ -392,12 +414,34 @@ button{
 
 
 .login-container{
-  min-height: 70vh;
-  padding-top:7%;
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.login-container .div{
+  width:25%;
+  height:100%;
+}
+.login-container .div a{
+  color:cornflowerblue;
+  text-decoration: none;
+}
+.login-container .div .checkbox{
+  margin:3% 0%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.login-container .div .checkbox input{
+ /* padding-left: 1%; */
+ margin-right: 5px;
 }
 .login-container h1{
-  font-size:50px;
+  font-size:35px;
+  margin-bottom: 2%;
+  /* text-align: center; */
 }
 
 .admin-container{
@@ -665,7 +709,7 @@ button{
     gap:10px;
   }
   .landing-container-content ul li a{
-    font-size:16px;
+    font-size:14px;
   }
   .landing-container-content p{
     margin-top : 5%;
@@ -697,12 +741,10 @@ button{
   }
 
   
-  .login-container{
-    padding-top:20%;
+  .login-container .div{
+    width: 90%;
   }
-  .login-register-form{
-    width:90%;
-  }
+  
   .admin-container-content h1{
     margin-top:20%;
   }

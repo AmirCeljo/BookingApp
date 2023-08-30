@@ -153,15 +153,15 @@ function Homepage() {
       </div>
       <div className='for-sale'>
           <h1>For sale</h1>
-          <Slider item={sale} message={'Problem with server'}/>
+          <Slider item={sale} message={'Application backend server still in development to fetch all available properties, soon to be finished'}/>
       </div>
       <div className='recommended'>
           <h1>Recommended</h1>
-          <Slider item={recommended} message={'Nothing recommended'}/>
+          <Slider item={recommended} message={'Application backend server still in development to fetch all available properties, soon to be finished'}/>
       </div>
       <div className='for-rent'>
           <h1>For rent</h1>
-          <Slider item={rent} message={'Nothing for rent'}/>
+          <Slider item={rent} message={'Application backend server still in development to fetch all available properties, soon to be finished'}/>
       </div>
     </div>
   )
