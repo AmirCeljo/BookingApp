@@ -38,10 +38,10 @@ function Header() {
             <li><Link to='/'><FaShoppingCart/></Link></li>
                
                <li><Link to='/login'>
-                    <FaSignInAlt />Login
+                    Login
                 </Link></li>
                 <li><Link to='/register'>
-                    <FaSignOutAlt />Register
+                   Register
                 </Link></li>
                </>)}
             

@@ -1,28 +1,38 @@
-import React from 'react'
-import {useState} from 'react'
-// import axios from 'axios'
+import React ,{useState,useEffect}from 'react'
+import axios from 'axios'
 import {Link} from 'react-router-dom'
-// import{toast} from 'react-toastify'
+// import {toast} from 'react-toastify'
 // import { FaCircle, FaDotCircle, FaLocationArrow, FaRegDotCircle, FaStar,FaStarHalf, FaStarHalfAlt } from 'react-icons/fa'
 // import { use } from 'bcrypt/promises'
 import SelectOption from './selectInput/SelectOption'
 import GalleryItem from './galleryItems/GalleryItem';
 import Slider from './propertySlider/Slider';
+import SaleSlider from './propertySlider/SaleSlider';
 function Homepage() {
-  // const [products , setProducts] = useState([])
+  const [products , setProducts] = useState([])
+  const [sale,setSale] = useState();
   // const navigate= useNavigate()
 
   // const user = JSON.parse(localStorage.getItem('user'))
 
-  // useEffect(() => {
-  //   const fetchData = async() => {
-  //     const result = await axios.get('http://localhost:3001/getProduct')
-  //     setProducts(result.data)
-  //     console.log(result.data)
-  //   }
+  useEffect(() => {
+    const fetchData = async() => {
+      const result = await axios.get('http://localhost:3001/getProduct')
+      setProducts(result.data)
+      
+      const saledata = []
+      result.data.forEach(item => {
+        if(item.name == 'Buy'){
+          saledata.push(item);
+          
+        }
+      });
+      
+      setSale(saledata);
+    }
 
-  //   fetchData()
-  // }, [])
+    fetchData()
+  }, [])
  
   // const addToCart = async(trenutniId) => {
   //   const korisnik = JSON.parse(localStorage.getItem('user'))
@@ -77,18 +87,16 @@ function Homepage() {
     {type:'totalSlides',text: 'Cottages', number:'5,178',class:'cottage'},
     {type:'totalSlides',text: 'Apartments', number:'67,934',class:'apartment'}
 ];  
-  const sale = []
-  const recommended = [] 
-  const rent = []
+ 
 
   return (
     <div className='container'>
       <div className="landing-container">
         <div className="landing-container-content">
           <ul>
-            {nav_tabs.map((item) => (
-                <li><Link to='/' type="button" className={activeItem === item.id ? 'active':''}
-                onClick={() => toggleActive(item.id)}>{item.name}</Link></li>
+            {nav_tabs.map((item,index) => (
+                <li key={index}><Link to='/' type="button" className={activeItem === item.id ? 'active':''}
+                onClick={() => toggleActive(item.id)} >{item.name}</Link></li>
             ))}
           </ul>
           <h1>Bridging the gap between buying and renting</h1>
@@ -149,20 +157,20 @@ function Homepage() {
       </div>
       <div className='property-types'>
           <h1>Browse by property type</h1>
-          <Slider item={totalSlides} message={'Nothing to show'}/>
+          <Slider totalSlides={totalSlides} message={'Nothing to show'}/>
       </div>
       <div className='for-sale'>
           <h1>For sale</h1>
-          <Slider item={sale} message={'Application backend server still in development to fetch all available properties, soon to be finished'}/>
+          <SaleSlider sale={sale} />
       </div>
-      <div className='recommended'>
+      {/* <div className='recommended'>
           <h1>Recommended</h1>
-          <Slider item={recommended} message={'Application backend server still in development to fetch all available properties, soon to be finished'}/>
+          <Slider message={'Application backend server still in development to fetch all available properties, soon to be finished'}/>
       </div>
       <div className='for-rent'>
           <h1>For rent</h1>
-          <Slider item={rent} message={'Application backend server still in development to fetch all available properties, soon to be finished'}/>
-      </div>
+          <Slider  message={'Application backend server still in development to fetch all available properties, soon to be finished'}/>
+      </div> */}
     </div>
   )
 }

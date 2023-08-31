@@ -2,12 +2,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import {motion} from 'framer-motion';
 
 
-const Slider = ({totalSlides}) => {
+const SaleSlider = ({sale}) => {
     const carouselRef = useRef()
     const [width,setWidth] = useState(0);
-    
-
-
     useEffect(() => {
         setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth)
     },[])
@@ -22,15 +19,18 @@ const Slider = ({totalSlides}) => {
         dragConstraints={{right: 0,left: -width}}
         className='inner-slider'
         >
-        
-        {totalSlides ? totalSlides.map((item,index) => (
-          <motion.div key={index}>       
-               <div className={`card ${item.class}`}></div>
-               <h3>{item.text}</h3>
-               <small>{item.number} <span className='span'>{item.text}</span></small>
-          </motion.div>
-     )): ''}
-
+       {sale ? sale.map((item,index) => (
+      <motion.div key={index}>
+        <div className='for-sale-card'>
+          <img src={item.image_link} alt="" />
+          <h5>{item.title}</h5>
+          <p>{item.description}</p><br/>
+          <small>{item.address}</small>
+          <small>$ {item.price}</small>
+        </div>
+      </motion.div>
+    )):'' 
+    }
 
         
     
@@ -43,4 +43,4 @@ const Slider = ({totalSlides}) => {
 }
 
 
-export default Slider
+export default SaleSlider

@@ -22,13 +22,13 @@ const socialmedia = [
   return (
     <div className='footer'>
       <ul>
-        {footernav.map(item=>(
-          <li><Link to={item.link}>{item.text}</Link></li>
+        {footernav.map((item,index)=>(
+          <li key={index}><Link to={item.link}>{item.text}</Link></li>
         ))}
       </ul>
       <ul>
         {socialmedia.map((item,index) => (
-           <li><Link to=''>{index === 0 ? <FaFacebook/> : index === 1 ? <FaTwitter/> : index === 2 ? <FaInstagram/> : index === 3 ? <FaLinkedin/> : ''}</Link></li>
+           <li key={index}><Link to=''>{index === 0 ? <FaFacebook/> : index === 1 ? <FaTwitter/> : index === 2 ? <FaInstagram/> : index === 3 ? <FaLinkedin/> : ''}</Link></li>
         ))}
         
       </ul>

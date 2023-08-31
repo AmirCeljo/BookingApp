@@ -738,13 +738,18 @@
     width:100%;
   }
 
-  .destinations-container,.property-types {
+  .destinations-container,.property-types, .for-sale {
     padding:5% 0px;
     width:90%;
     margin: auto;
   }
-
-  
+  .about-us{
+    display: none;
+  }
+  .flex-gallery .item{
+    flex-direction: column;
+  }
+ 
   .login-container .div{
     width: 90%;
   }
