@@ -20,7 +20,7 @@ const SaleSlider = () => {
       
       const fetchData = async () => {
         try {
-          const result = await axios.get('http://localhost:3001/getProduct')
+          const result = await axios.get('https://estate-select-08330fc8606a.herokuapp.com/getProduct')
           const rentSales = result.data.filter(item => item.name === 'Rent');
           
           setRentSale(rentSales);
