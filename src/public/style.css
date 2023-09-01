@@ -100,7 +100,7 @@
   position: fixed;
   z-index: 5;
   background-color: rgb(18, 59, 207);
-  padding:15px 0px;
+  padding:20px 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.319);
 }
 .header-ul{
@@ -123,20 +123,33 @@
   justify-content: center;
   align-items: center;
   gap:20px;
+
 }
 
 .header .header-ul ul li,
 .landing-container-content ul li {
   color:white;
   list-style: none;
+  
 }
 .header .header-ul ul li a,
 .landing-container-content ul li a{
   text-decoration: none;
   color:white;
   font-size:18px;
+  padding: 10px 15px;
 }
 
+.header .header-ul ul li .login:hover{
+  outline:1px solid white;
+  
+  border-radius: 5px;
+}
+.header .header-ul ul li .signup{
+  color:rgb(18, 59, 207);
+  background-color: white;
+  border-radius: 5px;
+}
 
 .container{
   width:100%;
@@ -153,7 +166,7 @@
 .landing-container-content{
   width:72%;
   margin:auto;
-  padding-top:4%;
+  padding-top:7%;
   color:white;
 }
 
@@ -170,7 +183,7 @@
   justify-content: left;
   align-items: center;
   gap:15px;
-  margin-bottom: 8%;
+  margin-bottom: 4%;
 }
 .landing-container-content ul li a {
   padding:10px 20px;
@@ -390,6 +403,10 @@
   display: block;
   margin:2% 0%;
   color: cornflowerblue;
+}
+.inner-slider{
+  width:100%;
+  /* background-color: red; */
 }
 
 .inner-slider h3{
@@ -738,7 +755,7 @@
     width:100%;
   }
 
-  .destinations-container,.property-types, .for-sale {
+  .destinations-container,.property-types, .for-sale,.for-rent {
     padding:5% 0px;
     width:90%;
     margin: auto;

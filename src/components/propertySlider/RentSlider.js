@@ -9,21 +9,21 @@ const SaleSlider = () => {
     const carouselRef = useRef()
     
     const [width,setWidth] = useState(0);
-    const [sale,setSale] = useState(null);
+    const [rentSale,setRentSale] = useState(null);
     
     
     useEffect(() => {
       setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth)
-    },[sale])
+    },[rentSale])
     
     useEffect(() => {
       
       const fetchData = async () => {
         try {
           const result = await axios.get('http://localhost:3001/getProduct')
-          const buySales = result.data.filter(item => item.name === 'Buy');
+          const rentSales = result.data.filter(item => item.name === 'Rent');
           
-          setSale(buySales);
+          setRentSale(rentSales);
   
         } catch (error) {
           console.log(error)
@@ -49,7 +49,7 @@ const SaleSlider = () => {
       
         className='inner-slider'
         >
-       {sale ? sale.map((item,index) => (
+       {rentSale ? rentSale.map((item,index) => (
         
         <motion.div key={index} >
             <div className="for-sale-card">

@@ -6,8 +6,6 @@ const Slider = ({totalSlides}) => {
     const carouselRef = useRef()
     const [width,setWidth] = useState(0);
     
-
-
     useEffect(() => {
         setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth)
     },[])

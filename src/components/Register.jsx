@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react'
 import { useState } from 'react'
-import {FaSignInAlt} from 'react-icons/fa'
+// import {FaSignInAlt} from 'react-icons/fa'
 import { toast } from 'react-toastify';
 import {useNavigate} from 'react-router-dom'
 function Register() {

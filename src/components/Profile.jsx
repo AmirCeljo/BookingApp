@@ -1,8 +1,8 @@
 import React from 'react'
 import {toast} from 'react-toastify'
-import { useState,useEffect } from 'react'
+import { useEffect } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
-import { FaArrowLeft, FaFacebook, FaInstagram, FaLinkedin, FaShoppingCart, FaTwitter } from 'react-icons/fa'
+import {  FaFacebook, FaInstagram, FaLinkedin, FaShoppingCart, FaTwitter } from 'react-icons/fa'
 
 function Profile() {
   const user = JSON.parse(localStorage.getItem('user'))

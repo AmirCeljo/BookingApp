@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, useNavigate} from 'react-router-dom'
-import {FaShoppingCart, FaSignInAlt, FaSignOutAlt,FaUser} from 'react-icons/fa'
+import {FaSearch, FaShoppingCart, FaSignOutAlt,FaUser} from 'react-icons/fa'
 
 function Header() {
   const user = JSON.parse(localStorage.getItem('user'))
@@ -34,14 +34,14 @@ function Header() {
           ) :
                
                (<>
-               
-            <li><Link to='/'><FaShoppingCart/></Link></li>
-               
-               <li><Link to='/login'>
-                    Login
+               <li><Link to=''><FaSearch/></Link></li>
+                <li><Link to='/'><FaShoppingCart/></Link></li>
+               <li><Link to=''>Contact</Link></li>
+               <li><Link to='/login' className='login'>
+                    Log In
                 </Link></li>
-                <li><Link to='/register'>
-                   Register
+                <li><Link to='/register' className='signup'>
+                   Sign Up
                 </Link></li>
                </>)}
             
