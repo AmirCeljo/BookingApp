@@ -129,14 +129,18 @@
   border:none;
   display: none;
   flex-direction: column-reverse;
+  align-items: center;
   transition: .5s ;
-  
+  /* padding-top: 5px; */
+  cursor: pointer;
+
 }
 
 
 .ul-item{
   width:30px;
   display: block;
+  /* margin: 5px 0px; */
   margin-bottom: 5px;
   padding: 1.2px;
   background-color: white;
@@ -174,14 +178,14 @@
 
 .top{
   
-  transform: rotate(45deg) translate(17%,2px);
+  transform: rotate(45deg) translate(5px,4px);
 }
 .middle{
-  display: none;
+  opacity: 0;
 }
 .bottom{
   transition: .5s ;
-  transform: rotate(-45deg) translate(10%,-0%);
+  transform: rotate(-45deg) translate(5px,-5px);
   
 }
 
