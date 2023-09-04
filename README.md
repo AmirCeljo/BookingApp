@@ -27,6 +27,7 @@ Web
 ![estatesignup](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/602f05b4-7d73-48bb-80ec-62b1827063a3)
 
 Mobile
-![estatemobile](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/1ffc2211-4f18-48f1-8995-aa88b161a34e)
+![estatemob](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/72845ae2-dc5e-4a23-aaf0-2f32fdc5241c)
+
 
 ![estatemobile2](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/e23fdda7-dd83-44a3-ac90-0fc211428203)
