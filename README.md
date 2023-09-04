@@ -16,3 +16,9 @@ username = admin
 password = 123456
 
 Have a great day !
+
+Web
+![estateapp](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/9415eb53-ad97-4716-92c9-16eb923ca26d)
+
+Mobile
+![estatemobile](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/1ffc2211-4f18-48f1-8995-aa88b161a34e)
