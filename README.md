@@ -20,5 +20,13 @@ Have a great day !
 Web
 ![estateapp](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/9415eb53-ad97-4716-92c9-16eb923ca26d)
 
+![estatecities](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/c8cd2a9f-317f-4f5f-ac5a-58b2db6c1228)
+
+![estate](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/2ab0b24b-8c65-40ae-8072-8a3fe417a8f7)
+
+![estatesignup](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/602f05b4-7d73-48bb-80ec-62b1827063a3)
+
 Mobile
 ![estatemobile](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/1ffc2211-4f18-48f1-8995-aa88b161a34e)
+
+![estatemobile2](https://github.com/AmirCeljo/Real-estate-agency/assets/61164084/e23fdda7-dd83-44a3-ac90-0fc211428203)
