@@ -17,7 +17,7 @@ password = 123456
 
 Have a great day !
 
-Available at https://estate-select.netifly.app
+Available at https://estate-select.netlify.app
 
 Web
 
